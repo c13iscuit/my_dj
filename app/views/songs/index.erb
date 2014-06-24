@@ -1,0 +1,15 @@
+<h1>WORKING</h1>
+
+<form action="mydj" method="post">
+  Song Name: <input type="text" name="name"><br>
+  Youtube Link: <input type="text" name="link"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<div>
+  <% @playlist.each do |song| %>
+    <p><%= song.name %>
+    <a href="song.link" target="_blank"> </a> </p>
+  <% end %>
+</div>
+

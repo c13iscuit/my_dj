@@ -10,13 +10,15 @@ Dir['app/**/*.rb'].each { |file| require_relative file }
 set :views, 'app/views'
 
 get '/mydj' do
-  @articles = Article.order('created_at DESC')
-  erb :'articles/index'
+  @playlist = Song.all.order('created_at DESC')
+  erb :'songs/index'
 end
 
 
 post '/mydj/add' do
 end
 
+# def spin_the_tune(song)
 
+# end
 
