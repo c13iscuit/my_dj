@@ -9,7 +9,10 @@
 <div>
   <% @playlist.each do |song| %>
     <p><%= song.name %>
-    <a href="song.link" target="_blank"> </a> </p>
+    <a href="<%= song.link %>" target="_blank" id="blah">CLICK</a> </p>
   <% end %>
+
+<input type="button" id="hidden" href="#" value="AWESOME">
+
 </div>
 
